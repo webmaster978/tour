@@ -29,10 +29,15 @@ include('includes/config.php');
 <!--//end-animate-->
 </head>
 <body>
-<?php include('includes/header.php');?>
-<div class="banner">
+<div class="row">
+	<div class="col-md-4">
+	<?php include('includes/header.php');?>
+
+	</div>
+	<div class="col-md-8">
+	<div class="banner">
 	<div class="container">
-		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> TMS - Tourism Management System</h1>
+		<h1> Sites touristiques</h1>
 	</div>
 </div>
 
@@ -88,6 +93,11 @@ foreach($results as $result)
 </div>
 			<div class="clearfix"></div>
 	</div>
+
+
+	</div>
+
+</div>
 
 
 

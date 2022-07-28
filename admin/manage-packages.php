@@ -74,23 +74,23 @@ else{
 				</div>
 <!--heder end here-->
 <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a><i class="fa fa-angle-right"></i>Manage Packages</li>
+                <li class="breadcrumb-item"><a href="#">Acceuil</a><i class="fa fa-angle-right"></i>Gerer</li>
             </ol>
 <div class="agile-grids">	
 				<!-- tables -->
 				
 				<div class="agile-tables">
 					<div class="w3l-table-info">
-					  <h2>Manage Packages</h2>
+					  <h2>Gerer</h2>
 					    <table id="table">
 						<thead>
 						  <tr>
 						  <th>#</th>
-							<th >Name</th>
+							<th >Nom</th>
 							<th>Type</th>
 							<th>Location</th>
-							<th>Price</th>
-							<th>Creation Date</th>
+							<th>Prix</th>
+							<th>Date creation</th>
 							<th>Action</th>
 						  </tr>
 						</thead>
@@ -112,7 +112,7 @@ foreach($results as $result)
 							<td><?php echo htmlentities($result->PackageLocation);?></td>
 							<td>$<?php echo htmlentities($result->PackagePrice);?></td>
 							<td><?php echo htmlentities($result->Creationdate);?></td>
-							<td><a href="update-package.php?pid=<?php echo htmlentities($result->PackageId);?>"><button type="button" class="btn btn-primary btn-block">View Details</button></a></td>
+							<td><a href="update-package.php?pid=<?php echo htmlentities($result->PackageId);?>"><button type="button" class="btn btn-primary btn-block">Voir detail</button></a></td>
 						  </tr>
 						 <?php $cnt=$cnt+1;} }?>
 						</tbody>
